@@ -16,7 +16,8 @@ public class Reading extends Hobby {
     }
 
     @Override
-    public void tellAboutHobby() {
-        System.out.println("Name is: " + name + ", experience: " + experience + ", activity is: " + isActive + ", and page per day is: " + pagePerDay);
+    public void tellAboutHobby() throws HobbyException {
+        if (experience < 0) throw new HobbyException();
+        else System.out.println("Name is: " + name + ", experience: " + experience + ", activity is: " + isActive + ", and page per day is: " + pagePerDay);
     }
 }

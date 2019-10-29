@@ -1,11 +1,11 @@
 package com.company;
 
 public abstract class Hobby {
-    public String name;
-    public int experience;
-    public boolean isActive;
+    protected String name;
+    protected int experience;
+    protected boolean isActive;
 
-    public abstract void tellAboutHobby();
+    public abstract void tellAboutHobby() throws HobbyException;
 
     public String getName() {
         return name;

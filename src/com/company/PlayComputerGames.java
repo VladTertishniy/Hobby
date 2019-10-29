@@ -16,8 +16,9 @@ public class PlayComputerGames extends Hobby {
     }
 
     @Override
-    public void tellAboutHobby() {
-        System.out.println("Name is: " + name + ", experience: " + experience + ", activity is: " + isActive + ", and genre is: " + genre);
+    public void tellAboutHobby () throws HobbyException {
+        if (experience < 0) throw new HobbyException();
+        else System.out.println("Name is: " + name + ", experience: " + experience + ", activity is: " + isActive + ", and genre is: " + genre);
     }
 
 }
