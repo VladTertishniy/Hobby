@@ -1,7 +1,5 @@
 package com.company;
 
-
-import org.apache.commons.logging.LogFactory;
 import org.apache.log4j.Logger;
 
 public class Test {
